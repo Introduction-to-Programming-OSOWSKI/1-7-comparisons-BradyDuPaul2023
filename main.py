@@ -1,17 +1,39 @@
 def greaterThan(x, y):
     if abs(x) > abs(y):
-        print("True")
+        return True
     else:
-        print("False")
+        return False
+
 print(greaterThan(10, 8))
-def lessThan(a, b):
-    if abs(a) < abs(b):
-        print("True")
+
+def lessThan(x, y):
+    if abs(x) < abs(y):
+        return True
     else:
-        print("False")
-print(lessThan(8, 8))
-def equalTo(q, w):
-    if abs(q) == abs(w):
-        print("True")
+        return False
+
+print(lessThan(8, 9))
+
+def equalTo(x, y):
+    if abs(x) == abs(y):
+        return True
     else:
-        print("false")
+        return False
+
+print(equalTo(6, 7))
+
+def greaterOrEqual(x, y):
+    if abs(x) >= abs(y):
+        return True
+    else:
+        return False
+
+print(greaterOrEqual(14, 16))
+
+def lessOrEqual(x, y):
+    if abs(x) <= abs(y):
+        return True
+    else:
+        return False
+
+print(lessOrEqual(30, 16))
